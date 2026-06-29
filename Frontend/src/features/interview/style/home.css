@@ -1,5 +1,4 @@
 .home-page {
-    width: 100%;
     min-height: 100vh;
     background: #0f172a;
     color: #f8fafc;
@@ -7,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     padding: 3rem 1rem;
     gap: 2rem;
 }
@@ -16,8 +16,8 @@
 }
 
 .page-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.3rem;
+    margin-bottom: 6px;
 }
 
 .page-header p {
@@ -25,18 +25,19 @@
     max-width: 600px;
 }
 
+
 .interview-card {
     width: 100%;
     max-width: 900px;
     background: #1e293b;
     border: 1px solid #334155;
-    border-radius: 1rem;
+    border-radius: 14px;
     overflow: hidden;
 }
 
 .interview-card__body {
     display: flex;
-    min-height: 520px;
+    min-height: 500px;
 }
 
 .interview-card__footer {
@@ -48,10 +49,6 @@
     align-items: center;
 }
 
-.panel-divider {
-    width: 1px;
-    background: #334155;
-}
 
 .panel {
     flex: 1;
@@ -62,10 +59,15 @@
     gap: 1rem;
 }
 
+.panel-divider {
+    width: 1px;
+    background: #334155;
+}
+
 .panel__header {
     display: flex;
+    gap: 8px;
     align-items: center;
-    gap: 0.5rem;
 }
 
 .panel__textarea {
@@ -74,49 +76,48 @@
 
     background: #0f172a;
     border: 1px solid #334155;
-
     color: white;
+
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
 
     resize: none;
 }
 
 .panel__textarea:focus {
     outline: none;
-    border-color: #e1034d;
+    border-color: #03e188ea;
 }
 
 .upload-section {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 .dropzone {
     border: 2px dashed #334155;
-    border-radius: 0.75rem;
+    border-radius: 10px;
+
     padding: 2rem;
-
     text-align: center;
-    cursor: pointer;
 
-    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .dropzone:hover {
-    border-color: #e1034d;
+    border-color: #03e188ea;
 }
 
 .generate-btn {
-    background: #e1034d;
+    background: #03e188ea;
     color: white;
 
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 8px;
 
     padding: 0.75rem 1.5rem;
-
     cursor: pointer;
 
     font-weight: 600;
@@ -126,6 +127,7 @@
     opacity: 0.9;
 }
 
+/* REPORTS */
 .recent-reports {
     width: 100%;
     max-width: 900px;
@@ -143,16 +145,16 @@
 
 .report-item {
     flex: 1;
-    min-width: 250px;
+    min-width: 240px;
 
     background: #1e293b;
     border: 1px solid #334155;
-    border-radius: 0.75rem;
+    border-radius: 10px;
 
     padding: 1rem;
-
     cursor: pointer;
 }
+
 
 .page-footer {
     display: flex;
@@ -160,10 +162,10 @@
 }
 
 .page-footer a {
-    text-decoration: none;
     color: #94a3b8;
+    text-decoration: none;
 }
 
 .page-footer a:hover {
-    color: white;
+    color: #fff;
 }
